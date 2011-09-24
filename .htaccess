@@ -1,0 +1,4 @@
+<Files *.pm>
+order deny,allow
+deny from all
+</Files>
