@@ -2,3 +2,7 @@
 order deny,allow
 deny from all
 </Files>
+<Files *.so>
+order deny,allow
+deny from all
+</Files>
