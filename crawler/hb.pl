@@ -6,7 +6,8 @@ use LWP::Simple qw/ get /;
 use XML::Simple;
 use Digest::MD5 qw/ md5_hex /;
 
-use lib '../lib';
+use FindBin;
+use lib "$FindBin::Bin/../lib";
 use MyDB;
 
 my $url = 'http://b.hatena.ne.jp/keyword/Perl?sort=hot&threshold=&mode=rss';

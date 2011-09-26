@@ -8,11 +8,13 @@ use LWP::Simple qw/ get /;
 use XML::Simple;
 
 use lib '../lib';
+use FindBin;
+use lib "$FindBin::Bin/../lib";
 use MyDB;
 use Time::Piece;
 use Time::Seconds;
 
-my $key = require './slideshare.key';
+my $key = require "$FindBin::Bin/slideshare.key";
 
 my $url = 'http://www.slideshare.net/api/2/search_slideshows';
 my $time = time;
