@@ -53,7 +53,7 @@ function getHBData(of) {
 					$('#hb>.loading').css('display','block');
 					getHBData(hbof-1);
 				})
-				.html('&#171;') // '>>'
+				.html('&#171;') // '<<'
 			).append(
 				$('<a/>').addClass('past')
 				.attr('title','過去の5件に戻る')
@@ -63,7 +63,7 @@ function getHBData(of) {
 					$('#hb>.loading').css('display','block');
 					getHBData(hbof+1);
 				})
-				.html('&#187;') // '<<'
+				.html('&#187;') // '>>'
 			)
 		);
 	});
@@ -100,7 +100,7 @@ function getSSData(of) {
 					$('#ss>.loading').css('display','block');
 					getSSData(ssof-1);
 				})
-				.html('&#171;') // '>>'
+				.html('&#171;') // '<<'
 			).append(
 				$('<a/>').addClass('past')
 				.attr('title','過去の5件に戻る')
@@ -110,7 +110,7 @@ function getSSData(of) {
 					$('#ss>.loading').css('display','block');
 					getSSData(ssof+1);
 				})
-				.html('&#187;') // '<<'
+				.html('&#187;') // '>>'
 			)
 		);
 	});
